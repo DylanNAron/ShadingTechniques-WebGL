@@ -1,0 +1,26 @@
+1. Set the texture coordinates correctly in sphere.js.  My face
+   should be upright and looking to the left.  Once you have it right,
+   switch image1.src (in view.js) to moon_diffuse.jpg.  You should now
+   see a picture of the moon pasted on the sphere.
+
+2. In index.html fragment shader, calculate ux, uy, and uz for the
+   tangent frame from the (interpolated) vectors fNormal and fTangent.
+   Select normal map for shading, and you should see a shiny grey
+   sphere.
+
+3. Set kd and ks from tex1 and tex2 using texture coordinate fTCoord.
+   Normal map should now show shaded but smooth moon.
+
+4. Look up the normal_color (encoding of normal as a color) in tex3
+   using fTCoord.  Set n_ts (normal in tangent space) to decoded
+   normal.  The moon should pop!
+
+5. Set offset.x and offset.y to the x and y coordinates of the
+   gradient of
+
+      f(x,y,z) = z - h(x,y)
+
+   Select height map for shading and slide depthScale to the left or
+   right to see dents or bumps.
+
+
