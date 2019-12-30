@@ -4,7 +4,7 @@
 # Moon Example
 ![ExamplePicture](https://github.com/DylanNAron/ShadingTechniques-WebGL/blob/master/ExamplePicture.png)
 
-#How to Run
+# How to Run
 
 This is made with webGL and can be run in your browser with all the files provided. Depending on browser may need to run a simple server in order to load the image files.
 
